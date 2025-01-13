@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--fontcolor:rgba(16, 16, 16, 0.64);
+--backgroundLightGray: rgba(180, 161, 232, 0.171);
+--containerPadding:14px;
+--ContainerOutsideMargin:20px;
+
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid red;
+    width: 80vw;
+    background-color: aqua;
+}
+.profile-header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+    border: 2px solid purple;
+    margin-bottom: var(--ContainerOutsideMargin);
+    color: var(--fontcolor);
+    font-weight: bold;
+}
+.left-header-container,.right-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 7px;
+    background-color:var(--backgroundLightGray);
+    border-radius: 30px;
+    width: 12rem;
+    
+}
+.mid-header-container{
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 3; */
+    border: 2px solid red;
+}
+.profile-img{
+    /* aspect-ratio: 1/1; */
+    /* width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    background-color: rgb(30, 34, 34); */
+    width: 90px; /* Increase the size for visibility */
+    height: 90px;
+    background-color: rgb(30, 34, 34);
+    flex-grow: 1;
+    align-self: center;
+    
+}
+.img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/* about profile
+ */
+ .verified{
+    width: 20px;
+    height: 20px;
+}
+.about-profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid saddlebrown;
+    padding: var(--containerPadding);
+    gap: 10px;
+    margin: var(--ContainerOutsideMargin);
+}
+.about-field{
+    color: var(--fontcolor);
+}
+
+
+/* social icons */
+.social-icons-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
+    margin: var(--ContainerOutsideMargin)
+}
+.icons-list{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.social-icon{
+    width: 3rem;
+    height: 3rem;
+}
+.icons-list > li{
+    background-color: var(--backgroundLightGray);
+    padding: 10px;
+    border-radius:60%;
+
+}
