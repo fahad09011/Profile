@@ -18,10 +18,10 @@ reviewButton.addEventListener("click", ()=>{
     functionOnClick(reviewContent);
 });
 
-//  function functionOnClick(activebutton){
-//     let allcontent = document.querySelectorAll(".button-content");
-//     allcontent.forEach((content)=>{
-//         content.classList.remove("active")
-//     });
-// activebutton.classList.add("active");
-// }
+ function functionOnClick(activebutton){
+    let allcontent = document.querySelectorAll(".button-content");
+    allcontent.forEach((content)=>{
+        content.classList.remove("active")
+    });
+activebutton.classList.add("active");
+}
