@@ -285,6 +285,7 @@ body {
   justify-content: space-between;
 }
 .main-booking-form-container {
+    width: 50%;
 }
 
 .close-button {
@@ -384,5 +385,8 @@ input[type="number"]:focus {
   .skils-list li {
     width: 100%;
     height: 100%;
+  }
+  .main-booking-form-container{
+    width: 100%;
   }
 }
