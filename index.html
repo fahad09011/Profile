@@ -231,62 +231,60 @@
         </div>
       </section>
 
-      <section class="booking-form-section">
+      <section class="booking-form-section" id="form-section">
         <div class="main-booking-form-container">
 
           <header class="form-header">
             <h2 class="title">Book Your Appointment</h2>
-            <p class="close-button">&times;</p>
+            <p class="close-button" id="close">&times;</p>
           </header>
-          <form action="#" class="from" id="form">
 
-            
-<div class="form-input">
-  <for id="name">Name:
-    <input type="text" name="your name" id="name" required placeholder="Enter your name here">
-  </for>
-</div>
+          <form class="form" id="form">
 
 
+            <div class="inputmain">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="your name"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+  
+    
+            <div class="inputmain">
+                <label for="address">Bussiness Address</label>
+                <input type="text" id="address" name="Bussiness Address" placeholder="Enter Your Address" required>
+            </div>
+    
+    
+            <div class="inputmain">
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email address" placeholder="Enter Your Email Address" required>
+            </div>
+    
+            <div class="inputmain">
+                <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" name="Phone Number" pattern="^[0-9/(/)\s]*$" placeholder="(041) 1234-3452 333">
+            </div>
+    
+            <div class="inputmain dtae-time">
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="select date" required>
 
-<div class="form-input">
-  <for id="number">Phone Number:
-    <input type="number" name="phone number" id="number" required placeholder="Enter Your Phone Number">
-  </for>
-</div>
+                
+                <label for="time">Time: </label>
+                <input type="time" id="time" name="select time" required>
+            </div>
+    
 
-
-
-<div class="form-input">
-  <for id="emailAddress">Email :
-    <input type="email" name="email address" id="emailAddress" required placeholder="Enter your email address">
-  </for>
-</div>
-
-
-
-<div class="form-input">
-  <for id="">name
-    <input type="text" name="" id="" required placeholder="">
-  </for>
-</div>
-
-
-
-<div class="form-input">
-  <for id="">name
-    <input type="text" name="" id="" required placeholder="">
-  </for>
-</div>
-
-
-
-<div class="form-input">
-  <for id="">name
-    <input type="text" name="" id="" required placeholder="">
-  </for>
-</div>
-
+            <div class="booking-button-container">
+              <button id="booking-button-in-form" class="booking-button">
+                Confirm appointment
+              </button>
+            </div>
           </form>
         </div>
       </section>
